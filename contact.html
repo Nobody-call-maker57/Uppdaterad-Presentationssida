@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="sv">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Kontakta mig - Tobias Kater</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="script.js" defer></script>
+    </head>
+    <body>
+        
+    <a href="#main-content" class="skip-link">Hoppa till huvudinnehåll</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo">MinWebb.se</a>
+
+      <button id="menu-toggle" class="menu-toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="Öppna huvudmeny">
+        ☰
+      </button>
+
+      <nav id="nav-menu" class="nav-menu" aria-label="Huvudmeny">
+        <ul class="nav-list">
+          <li><a href="index.html" class="nav-link">Hem</a></li>
+          <li><a href="about.html" class="nav-link">Om oss</a></li>
+          <li><a href="contact.html" class="nav-link" aria-current="page">Kontakta mig</a></li>
+        </ul>
+      </nav>
+        <div class="nav-controls">
+            <button id="theme-toggle" class="btn btn-secondary" type="button">🌙 Mörkt tema</button>
+        </div>
+    </div>
+    </header>
+
+    <main id="main-content" tabindex="-1">
+      <div class="container">
+        <section class="hero" aria-labelledby="contact-title">
+          <h1 id="contact-title">Kontakta mig</h1>
+          <p>Har du frågor eller vill du komma i kontakt med mig? Fyll i formuläret nedan så återkommer jag till dig så snart som möjligt.
+          </p>
+        </section>
+
+        <form id="contact-form" novalidate>
+        
+        <div class="form-group">
+          <label for="name">Ditt namn <span aria-hidden="true">*</span></label>
+          <input type="text" id="name" name="name" class="form-control" required aria-describedby="name-error">
+          <span id="name-error" class="error-message" aria-live="polite"></span>
+        </div>
+
+        <div class="form-group">
+          <label for="email">E-postadress <span aria-hidden="true">*</span></label>
+          <input type="email" id="email" name="email" class="form-control" required aria-describedby="email-error">
+          <span id="email-error" class="error-message" aria-live="polite"></span>
+        </div>
+
+        <div class="form-group">
+          <label for="message">Meddelande <span aria-hidden="true">*</span></label>
+          <textarea id="message" name="message" rows="5" class="form-control" required aria-describedby="message-error"></textarea>
+          <span id="message-error" class="error-message" aria-live="polite"></span>
+        </div>
+
+        <button type="submit" class="btn" style="width: 100%;">Skicka meddelande</button>
+
+        <div id="form-status" class="form-status" aria-live="polite"></div>
+
+      </form>
+      
+      </div>
+    </main>
+
+    </body>
+</html>
